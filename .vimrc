@@ -38,3 +38,7 @@ set laststatus=2
 " allows python scripts to be executed with F9
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+
+" :w!!
+" write the file when you accidentally opened it without the right (root) privileges
+cmap w!! w !sudo tee % > /dev/null
