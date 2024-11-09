@@ -24,9 +24,9 @@
                 "wireplumber",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-		"network",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
+		// "network",
+		// "custom/left-arrow-light",
+		// "custom/left-arrow-dark",
 		"backlight",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
@@ -79,16 +79,18 @@
 	},
         "wireplumber": {
         	"format": "{volume}% {icon}",
-            "format-icons": {
-                "headphone": "",
-                "hands-free": "",
-                "headset": "",
-                "phone": "",
-                "portable": "",
-                "car": "",
-                "default": ["", "", ""]
-            },
-        	"on-click": "helvum"
+                "format-muted": "",
+                "format-icons": {
+                    "headphone": "",
+                    "hands-free": "",
+                    "headset": "",
+                    "phone": "",
+                    "portable": "",
+                    "car": "",
+                    "default": ["", "", ""]
+                },
+            	// "on-click": "helvum"
+            	"on-click": "pavucontrol"
         },
         "pulseaudio": {
             // "scroll-step": 1, // %, can be a float
@@ -156,4 +158,5 @@
 		"icon-size": 20
 	}
 }
+
 
